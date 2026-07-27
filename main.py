@@ -12,7 +12,7 @@ def view_directory(dir: list):
             img = Image.open(f"{dir}/{x}")
             width, height = img.size
             res = img.resize((int(width/2), int(height/2)))
-            res.show()
+            res.save(f"{dir}\\{x}")
         else:
             new_list.append(f"{dir}\\{x}")
 
