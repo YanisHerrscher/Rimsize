@@ -1,0 +1,5 @@
+from resize import Resize
+from sys import argv
+
+im = Resize(argv[1], argv[2:])
+im.convert()
