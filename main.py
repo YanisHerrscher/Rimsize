@@ -31,5 +31,5 @@ class Resize:
         self.__max_thread.map(self.__resize, self.__list_image)
         im.__max_thread.shutdown(wait=True)
 
-im = Resize([argv[1]])
+im = Resize(argv[1:])
 im.convert()
